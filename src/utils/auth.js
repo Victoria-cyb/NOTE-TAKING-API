@@ -1,22 +1,3 @@
-// const jwt = require('jsonwebtoken');
-// const User = require('../models/User');
-
-// module.exports = async (req) => {
-//   const authHeader = req.headers.authorization;
-//   if (!authHeader || !authHeader.startsWith('Bearer ')) {
-//     return null;
-//   }
-//   const token = authHeader.replace('Bearer ', '');
-//   try {
-//     const { userId } = jwt.verify(token, process.env.JWT_SECRET);
-//     console.log(jwt.decode(token));
-
-//     return await User.findById(userId);
-//   } catch (err) {
-//     return null;
-//   }
-// };
-
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
@@ -44,21 +25,3 @@ module.exports = async (req) => {
   }
 };
 
-
-// const jwt = require('jsonwebtoken');
-// const User = require('../models/User');
-
-// module.exports = async ({ req }) => {
-//   const authHeader = req.headers.authorization || '';
-//   if (!authHeader) return { user: null };
-
-//   const token = authHeader.replace('Bearer ', '');
-//   try {
-//     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-//     const user = await User.findById(decoded.userId);
-//     return { user };
-//   } catch (error) {
-//     console.error('Auth error:', error);
-//     return { user: null };
-//   }
-// };

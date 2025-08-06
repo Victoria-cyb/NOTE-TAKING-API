@@ -1,26 +1,3 @@
-// const nodemailer = require('nodemailer');
-// require('dotenv').config();
-
-// const transporter = nodemailer.createTransport({
-//   host: process.env.EMAIL_HOST,
-//   port: process.env.EMAIL_PORT,
-//   auth: {
-//     user: process.env.EMAIL_USER,
-//     pass: process.env.EMAIL_PASS,
-//   },
-// });
-
-// module.exports.sendReminderEmail = async (user) => {
-//   await transporter.sendMail({
-//     from: process.env.EMAIL_USER,
-//     to: user.email,
-//     subject: 'Daily Notes Reminder',
-//     text: `Hi ${user.name}, don’t forget to check your notes today!`,
-//   });
-// };
-
-
-
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
