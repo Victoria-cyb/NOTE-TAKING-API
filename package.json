@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Victoria-cyb/NOTE-TAKING-API#readme",
   "dependencies": {
-    "apollo-server": "^3.13.0",
     "apollo-server-express": "^3.13.0",
     "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.1",
