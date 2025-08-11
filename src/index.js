@@ -9,6 +9,7 @@ const noteTypeDefs = require('./schemas/note');
 const auth = require('./utils/auth');
 const { startCron } = require('./utils/cron');
 
+
 const app = express();
 
 const typeDefs = [userTypeDefs, noteTypeDefs];

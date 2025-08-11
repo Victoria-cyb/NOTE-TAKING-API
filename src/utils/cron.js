@@ -2,6 +2,7 @@ const cron = require('node-cron');
 const User = require('../models/User');
 const { sendReminderEmail } = require('./email');
 
+
 module.exports.startCron = () => {
   cron.schedule('0 20 * * *', async () => {
     console.log('Running daily reminder cron job');
